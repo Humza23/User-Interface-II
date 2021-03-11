@@ -44,7 +44,9 @@ table {
 /* GENERAL STYLES */
 * {
     font-size: 62.5%;
-    /* border: 2px solid blue; */
+}
+body {
+    font-family: 'Indie Flower', cursive;
 }
 /* Add CSS styling here */
 header {
