@@ -97,6 +97,7 @@ header nav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-content: center;
 }
 .mynametext a{
     display:flex;
@@ -105,7 +106,7 @@ header nav{
     padding: .7rem;
     font-size: 1.4rem;
     flex-wrap: wrap;
-    width: 35%;
+    width: 40%;
 }
 .mynametext h3{
     font-size: 1.8rem;
@@ -159,11 +160,20 @@ footer h3{
     font-size: 1.4rem;
     flex-wrap: wrap;
     width: 25%;
-    margin: 2rem auto;
+    margin: 1rem auto 1rem auto;
 }
 
 /* Tablet Styles */
 @media(max-width:800px){
+.mynameimage{
+    margin: auto;
+}
+.myprojects{
+    width: 95%;
+}
+.myprojects img{
+    justify-content: space-between;
+}
 
 }
 
@@ -235,10 +245,19 @@ footer h3{
     display: none;
 }
 footer{
-    padding-top:1rem;
+    padding-top:2rem;
+    padding-bottom: 1rem;
 }
-div a{
-    display:none;
+#facebook{
+    display: none;
 }
-
+.contactme{
+    width: 7rem;
+}
+.first{
+    background-color: whitesmoke;
+}
+nav{
+    background-color: whitesmoke;
+}
 }
