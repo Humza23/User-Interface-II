@@ -42,9 +42,10 @@ table {
 	border-spacing: 0;
 }
 /* GENERAL STYLES */
-* {
-    font-size: 62.5%;
+*{
+    font-size:62.5%;
 }
+
 body {
     font-family: 'Indie Flower', cursive;
 }
@@ -58,7 +59,13 @@ header {
     padding: .5rem;
 }
 header nav{
-    padding: 10px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+.myname{
+    display:flex;
+    width: 100%;
 }
 .links{
     display:flex;
@@ -70,11 +77,12 @@ header nav{
     justify-content: space-around;
     align-items: center;
     width: 5rem;
-    height: 25px;
+    height: 2.5rem;
 }
 .first {
     display: flex;
     background-color: lightpink;
+    flex-wrap:wrap;
 }
 .mynametext h2{
     text-transform: uppercase;
@@ -104,16 +112,20 @@ header nav{
 }
 .mynameimage img{
     height: 35vh;
-    width: 500px;
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 .projectimages {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 25%;
+    flex-wrap: wrap;
 }
 .projectimages p{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .projectimages img{
     display: flex;
@@ -148,4 +160,85 @@ footer h3{
     flex-wrap: wrap;
     width: 25%;
     margin: 2rem auto;
+}
+
+/* Tablet Styles */
+@media(max-width:800px){
+
+}
+
+/* Mobile Styles */
+@media(max-width:500px){
+.myname{
+    justify-content: center;
+}
+.links{
+    flex-direction: column;
+     align-items: center;
+}
+.mynameimage{
+    width: 100%;
+    justify-content: center;
+}
+.mynameimage img{
+    margin: 0 2rem;
+    height: 40vh;
+}
+.mynametext{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin: 1rem 1rem;
+    align-items: center;
+}
+.mynametext h3{
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 1rem auto;
+}
+.mynametext h2{
+    margin: 0 auto;
+    justify-content: center;
+}
+.mynametext a{
+    margin: 0 auto;
+}
+.myprojects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 0rem;
+
+}
+.projectimages img{
+    justify-content: space-between;
+    width: 11rem;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+.projectimages {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0rem;
+    width: 45%;
+}
+.projectimages p{
+    flex-direction: row;
+    justify-content: center;
+}
+.projectimages:nth-child(7){
+    display: none;
+}
+.projectimages:nth-child(8){
+    display: none;
+}
+footer{
+    padding-top:1rem;
+}
+div a{
+    display:none;
+}
+
 }
