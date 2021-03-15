@@ -1,1 +1,263 @@
+/* CSS RESET BELOW */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* GENERAL STYLES */
+*{
+    font-size:62.5%;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
 /* Add CSS styling here */
+header {
+    background-color: lightgray;
+}
+.myname h1{
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+header nav{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+.myname{
+    display:flex;
+    width: 100%;
+}
+.links{
+    display:flex;
+}
+.links a{
+    display: flex;
+    border: 1px solid black;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    width: 5rem;
+    height: 2.5rem;
+}
+.first {
+    display: flex;
+    background-color: lightpink;
+    flex-wrap:wrap;
+}
+.mynametext h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.mynameimage, .mynametext{
+    display:flex;
+    width: 30%;
+}
+.mynametext {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.mynametext a{
+    display:flex;
+    border: 2px solid black;
+    justify-content: center;
+    padding: .7rem;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.mynametext h3{
+    font-size: 1.8rem;
+}
+.mynameimage img{
+    height: 35vh;
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectimages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    flex-wrap: wrap;
+}
+.projectimages p{
+    display: flex;
+    justify-content: center;
+}
+.projectimages img{
+    display: flex;
+    height: 20vh;
+    margin: 1rem;
+}
+.myprojects {
+    padding: 1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 4rem;
+    text-align: center;
+    justify-content: space-between;
+}
+footer h3{
+    font-size: 1.6rem;
+}
+.contactme {
+    display:flex;
+    border: 2px solid black;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 1rem auto 1rem auto;
+}
+
+/* Tablet Styles */
+@media(max-width:800px){
+.mynameimage{
+    margin: auto;
+}
+.myprojects{
+    width: 95%;
+}
+.myprojects img{
+    justify-content: space-between;
+}
+
+}
+
+/* Mobile Styles */
+@media(max-width:500px){
+.myname{
+    justify-content: center;
+}
+.links{
+    flex-direction: column;
+     align-items: center;
+}
+.mynameimage{
+    width: 100%;
+    justify-content: center;
+}
+.mynameimage img{
+    margin: 0 2rem;
+    height: 40vh;
+}
+.mynametext{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin: 1rem 1rem;
+    align-items: center;
+}
+.mynametext h3{
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 1rem auto;
+}
+.mynametext h2{
+    margin: 0 auto;
+    justify-content: center;
+}
+.mynametext a{
+    margin: 0 auto;
+}
+.myprojects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 0rem;
+
+}
+.projectimages img{
+    justify-content: space-between;
+    width: 11rem;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+.projectimages {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0rem;
+    width: 45%;
+}
+.projectimages p{
+    flex-direction: row;
+    justify-content: center;
+}
+.projectimages:nth-child(7){
+    display: none;
+}
+.projectimages:nth-child(8){
+    display: none;
+}
+footer{
+    padding-top:2rem;
+    padding-bottom: 1rem;
+}
+#facebook{
+    display: none;
+}
+.contactme{
+    width: 7rem;
+}
+.first{
+    background-color: whitesmoke;
+}
+nav{
+    background-color: whitesmoke;
+}
+}
